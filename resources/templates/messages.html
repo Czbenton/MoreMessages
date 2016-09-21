@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ForRealz,WeAreHackingYou</title>
+    <link rel="stylesheet" href="css/message_style.css">
+    <style>
+        ul {
+            list-style-image: url('http://plainicon.com/dboard/userprod/2803_dd580/prod_thumb/plainicon.com-49102-16px-80d.png');
+        }
+    </style>
+</head>
+<body id="message-body" >
+<form class="form" action="/createMessage" method="post">
+    <input class="input" type="text" placeholder="Enter a message!" name="message"/>
+    <button class="btn" type="submit" >Save</button>
+</form> <hr>
+<h2>Welcome {{name}}</h2>
+<h2><u>Message:</u></h2>
+<ul><strong>
+    {{#messageList}}
+    <li>{{message}}</li>
+    {{/messageList}}
+</strong></ul>
+</body>
+</html>

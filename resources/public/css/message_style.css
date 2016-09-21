@@ -1,6 +1,12 @@
 #message-body {
     background-image: url("http://wallpaper.zone/img/4093207.png");
     background-size: cover;
+    background-repeat: no-repeat
+}
+#index-body {
+    background-image: url("http://wallpaper.zone/img/4093207.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .form{
@@ -8,7 +14,7 @@
 }
 
 .input {
-    width: 50%;
+    width: 100%;
     font-size: 1rem;
 }
 
@@ -16,4 +22,27 @@
     width: 20%;
     font-size: 1rem;
 }
+
+.submitBtn{
+    width: 20%;
+    font-size: 1rem;
+}
+
+.logoutIndex{
+    width: 20%;
+    font-size: 1rem;
+}
+
+.logout{
+    position:absolute;
+    bottom:0;
+    width: 15%;
+    font-size: 1.5rem;
+}
+
+.form{
+    display: flex;
+}
+
+
 

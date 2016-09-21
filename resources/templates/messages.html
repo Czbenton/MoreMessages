@@ -17,10 +17,26 @@
 </form> <hr>
 <h2>Welcome {{name}}</h2>
 <h2><u>Message:</u></h2>
-<ul><strong>
+<ol><strong>
     {{#messageList}}
     <li>{{message}}</li>
     {{/messageList}}
-</strong></ul>
+</strong></ol>
+
+<form action="/logout" method="post">
+    <button class="logout" type="submit">Logout</button>
+</form>
+
+<form action="/editMessage" method="post">
+    <input class="editMessage" type="number" placeholder="Enter number to edit" name="editNum">
+    <input class="editMessage2" type="text" placeholder="New message here" name="edit">
+    <button class=="editBtn" type="submit">Change</button>
+</form>
+
+<form action="/deleteMessage" method="post">
+    <input class="deleteMessage" type="number" placeholder="Enter number to delete" name="delete">
+</form>
+
 </body>
+
 </html>
